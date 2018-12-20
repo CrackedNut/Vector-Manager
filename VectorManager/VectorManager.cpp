@@ -19,8 +19,13 @@ int VectorManager::getElement(int index)
     return vect[index];
 }
 
+void VectorManager::changeValue(int index, int value)
+{
+    vect[index] = value;
+}
+
 vector<int> VectorManager::createShuffled(int size)
-    {
+{
     srand(time(NULL));
     vect.resize(size);
     for(int i = 0; i < size; i++)
